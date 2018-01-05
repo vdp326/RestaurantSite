@@ -3,71 +3,76 @@
     <head>
         <title>Contact Us</title>
         <style>
-            #container{
+            #main{
                 text-align: center
             }
         </style>
     </head>
     <body>
-        <h1 align='center'>Cherry Sushi</h1>
-        <hr/>
-        <br/>
-        <div style="margin-left: 45px">
-            <nav>
+        <div id="title">
+            <h1 align='center'>Cherry Sushi</h1>
+        </div>
+        
+        <div id="navigation">
+            <hr/>
+            <p>
                 <a href="index.html" target="_blank">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="menu.html" target="_blank">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="contact.html" target="_blank">Contact Us</a>
-            </nav>
-        </div>  
-        <br/>
-        <hr/>
-        <br/><br/><br/>
-        <form action="contact.html" method="POST">
-            <div id="container">
-            
-                <label id='NameLabel' for='Name'>Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" name="FullName"/>
-                
-                <br/><br/>
-                <label id="EmailLabel" for="Email">Email:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" name="EmailAddress"/>
-
-                <br/><br/>
-                <label id="PhoneLabel" for="Phone">Phone:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" name="PhoneNumber"/>
-
-                <br/><br/>
-                <label id="InquiryLabel" for="Inquiry">Reason for Inquiry:&nbsp;&nbsp;&nbsp;&nbsp; </label>
-                <select name="InquiryList">
-                    <option value="Catering">Catering</option>
-                </select>
-                <br/><br/>
-                <label id="Additional Information" >Additional Information: </label>
-                <textarea name="AdditionalInformation"></textarea><br/>
-
-                <br/><br/>
-                <label id="Questionslabel" for="Questions">Have you been to the restaurant?
-                &nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="radio" name="answer" value="No" checked/>
-                <input type="radio" name="answer" value="Yes" />
-
-                <br/><br/>
-                <label id="DaysLabel" for="Days">Best days to contact you:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="checkbox" name="choices" value="Monday"/>M &nbsp;
-                <input type="checkbox" name="choices" value="Tuesday"/>T &nbsp;
-                <input type="checkbox" name="choices" value="Wednesday"/>W &nbsp;
-                <input type="checkbox" name="choices" value="Thursday"/>Th &nbsp;
-                <input type="checkbox" name="choices" value="Friday"/>F &nbsp;
-
-                <br/><br/>
-                <input type="submit" value="Send Request"/>
-            </di>
-        </form>
+                <a href="contact.html">Contact Us</a>
+            </p>  
+            <hr/>
+        </div>
         <br/><br/>
-        <hr/>
-        <div style="text-align: center">
-                <p>2910 El Camino Real, Santa Clara, CA 95051</p>   
-                <p>408-555-1234</p>
-            </div>
+        <div id="main">
+            <form action="contact.html" method="POST">
+            
+                
+                    <label id='NameLabel' for='Name'>Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="FullName"/>
+                    
+                    <br/><br/>
+                    <label id="EmailLabel" for="Email">Email:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="EmailAddress"/>
+
+                    <br/><br/>
+                    <label id="PhoneLabel" for="Phone">Phone:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="PhoneNumber"/>
+
+                    <br/><br/>
+                    <label id="InquiryLabel" for="Inquiry">Reason for Inquiry:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <select name="InquiryList">
+                        <option value="Catering">Catering</option>
+                    </select>
+                    <br/><br/>
+                    <label id="Additional Information" >Additional Information: </label>
+                    <textarea name="AdditionalInformation"></textarea><br/>
+
+                    <br/><br/>
+                    <label id="Questionslabel" for="Questions">Have you been to the restaurant?
+                    &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="radio" name="answer" value="No" checked/>
+                    <input type="radio" name="answer" value="Yes" />
+
+                    <br/><br/>
+                    <label id="DaysLabel" for="Days">Best days to contact you:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="checkbox" name="choices" value="Monday"/>M &nbsp;
+                    <input type="checkbox" name="choices" value="Tuesday"/>T &nbsp;
+                    <input type="checkbox" name="choices" value="Wednesday"/>W &nbsp;
+                    <input type="checkbox" name="choices" value="Thursday"/>Th &nbsp;
+                    <input type="checkbox" name="choices" value="Friday"/>F &nbsp;
+
+                    <br/><br/>
+                    <input type="submit" value="Send Request"/>
+            
+            </form>
+        </div>
+        <br/><br/>
+        <div id="footer">
+                <hr/>
+                <div style="text-align: center">
+                    <p>2910 El Camino Real, Santa Clara, CA 95051</p>   
+                    <p>408-555-1234</p>
+                </div>
+        </div>
     </body>
 </html>
